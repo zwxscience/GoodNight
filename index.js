@@ -42,8 +42,8 @@ bot.on('logout', () => {
 bot.on('contacts-updated', contacts => {
     if (!username) {
         // console.log('联系人数量: ', Object.keys(bot.contacts).length);
-        if (bot.Contact.getSearchUser('世界第一可爱公主殿下').length) {
-            username = bot.Contact.getSearchUser('世界第一可爱公主殿下')[0].UserName;
+        if (bot.Contact.getSearchUser('文件传输助手').length) {
+            username = bot.Contact.getSearchUser('文件传输助手')[0].UserName;
             console.log('获取目标用户成功: ', username);
         }
     }
